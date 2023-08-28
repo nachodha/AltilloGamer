@@ -1,0 +1,225 @@
+
+/*ESTILOS GENERALES DE LA TIENDA Y LANDING*/
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #ffffff;
+}
+
+.header {
+    background-color: #ffffff;
+
+
+}
+#carro {
+    color: #f4690c;
+    font-size: 25px;
+}
+#insta {
+    color: #f30000;
+    font-size: 25px;
+}
+    .menu {
+        background-color: #1f1f1f;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        height: 7vh;
+    }
+        .logo {
+            background-color: #e9f48600;
+            flex: 1 1 auto;
+            margin-right: 5px;
+            padding-left: 20vw;
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+        }
+            .gamer {
+                color: #ffffff;
+                font-size: 30px;
+                font-family: 'Press Start 2P', cursive;
+                
+            }
+            .altillo {
+                color: #f65a07;
+                font-size: 30px;
+                font-family: 'Press Start 2P', cursive;
+            }
+        .instagram {
+            background-color: #e9f48600;
+            display: flex;
+            flex: 1 1 auto;
+            padding-right: 15px;
+            justify-content: flex-end;
+            margin-left: 5px;
+        }
+        .carrito {
+            background-color: #e9f48600;
+            flex: 1 1 auto;
+            margin-left: 5px;
+            padding-right: 0vw;
+        }
+
+.section {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #fffbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+ 
+    .color-overlay{
+        background: linear-gradient(to right, #434343c2 2%,#434343c2 20%, rgb(0, 0, 0) 100%);;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        position: absolute;
+    }
+    .texto {
+        z-index: 1;
+        font-family: 'Oswald', sans-serif;
+        color: #fffbfb;
+        margin-left: 15px;
+        font-size: 60px;
+        text-decoration: none;
+        text-shadow: 1px 2px 2px rgb(236, 84, 24);
+    }
+    .ofertasPS4 {
+        background-image: url(landing-img/ps42.jpg);
+        background-color: aqua;
+        position: relative;
+        color: #e80a0a00;
+        justify-content: flex-start;
+        display: flex;
+        height: 30vh;
+        width: 60vw;
+        align-items: center;
+        
+    }
+    .ofertasPS5 {
+        background-image: url(landing-img/ps52.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: aqua;
+        position: relative;
+        color: #e80a0a00;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        height: 30vh;
+        width: 60vw;
+        align-items: center;
+    }
+    .misteryBox{
+        background-image: url(landing-img/lootbox.jpg);
+        background-color: aqua;
+        position: relative;
+        color: #e80a0a00;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        height: 30vh;
+        width: 60vw;
+        align-items: center;
+    }
+
+.footer {
+    height: 5vh;
+    background-color: #f65e06;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}  
+    .pie {
+        background-color: #ebf52500;
+        font-family: 'Press Start 2P', cursive;
+    }
+
+
+@media all and (max-width: 800px) {
+    .instagram {
+        display: none;
+    }
+    .altillo {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+    .gamer {
+        font-size: 18px;
+        margin-left: 5px;
+        margin-bottom: 15px;
+    }
+    .ofertasPS4 {
+        width: 100vw;
+    }
+    .ofertasPS5 {
+        width: 100vw;
+    }
+    .misteryBox {
+        width: 100vw;
+    }
+    .logo {
+        flex-direction: column;
+        padding-left: 3px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .carrito {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+}
+
+/*INICIO ESTILOS ESPECIFICOS DE TIENDA*/
+
+.store {
+    background-color: #414040;
+    height: 100%;
+    padding-top: 10px;
+    flex-wrap: nowrap;
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+}
+.card {
+    margin: 10px;
+}
+.card-img-top {
+    height: auto;
+    width: auto;
+}
+.card-title {
+    font-family: oswald;
+    padding: 0px;
+    margin-top: -18px;
+}
+.card-subtitle {
+    display: flex;
+    margin-bottom: 200px;
+}
+.button-box {
+    display: flex;
+    justify-content: end;
+}
+
+.boton {
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: 100px;
+    background-color: #a36809;
+    border-radius: 10px;
+    border: 2px solid rgba(237, 159, 13, 0.654);
+    font-size: 13px;
+    font-family: sans-serif;
+    color: rgb(180, 180, 180);
+}
+
+
