@@ -144,9 +144,6 @@
 
 
 @media all and (max-width: 800px) {
-    .instagram {
-        display: none;
-    }
     .altillo {
         font-size: 18px;
         margin-left: 5px;

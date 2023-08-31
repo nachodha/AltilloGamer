@@ -1,12 +1,13 @@
 [
-    {
+    {    "id":"0",
         "nombre": "Armored Core 6",
         "precio": "18999",
         "tipo": "Primaria PS4",
         "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202304/2800/f9336cf87ddc9d5996606fd2e7f5e4e6a6bbc5131845d665.png?w=620&thumb=false",
         "stock": "1"
+       
     },
-    {
+    {    "id":"1",
         "nombre": "Puerco Arania",
         "precio": "18999",
         "tipo": "Secundaria PS4",
@@ -14,14 +15,15 @@
         "stock": "1"
     }
     ,
-    {
+    {   
+        "id":"2",
         "nombre": "Spiderman",
         "precio": "18999",
         "tipo": "Secundaria PS4",
         "imagen": "https://image.api.playstation.com/vulcan/ap/rnd/202009/3021/B2aUYFC0qUAkNnjbTHRyhrg3.png?w=620&thumb=false",
         "stock": "1"
     },
-    {
+    {    "id":"3",
         "nombre": "Spiderman",
         "precio": "18999",
         "tipo": "Secundaria PS4",
