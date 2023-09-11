@@ -4,7 +4,8 @@ console.log(`hello world`)
 let ofertasPS4 = []
 let contenidoStorePS4 = document.getElementById(`contenidoStorePS4`)
 let carritoCompra = []
-
+console.log(carritoCompra.length)
+console.log(contenidoStorePS4)
 
 class productoPs4 {
   constructor(id, nombre, precio, tipo, imagen) {
@@ -50,10 +51,24 @@ function clickBoton(clicked_id) {
   let newItem = new productoPs4 (clicked_id, document.getElementById(`nombre`+clicked_id).innerText, document.getElementById(`precio`+clicked_id).innerText,  document.getElementById(`tipo`+clicked_id).innerText, document.getElementById(`imagen`+clicked_id).innerText )
   carritoCompra.push(newItem)
   console.log(carritoCompra)
+  console.log(carritoCompra.length)
+//CADA VEZ QUE SE CLICKEA EL BOTON PARA AGREGAR UN PRODUCTO AL CARRITO SE INTERACTUA CON EL LOCALSTORAGE, QUE LUEGO DARA CONTENIDO AL CHECKOUT
+  if (localStorage.getItem (`carrito`) === null) {
+    localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))
+  }  else {
+    localStorage.clear()
+    localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))
+  }
 }
 
      // Logre que, al clickear en cada producto rescatado del json y pintado en la tienda, se cree un nuevo objeto y se lo sume a un array, que es el array que va a funcionar de carrito de compras.
      // Que sigue? Utilizar ese array para hacer el carrito de compras y el checkout.
+
+//ESTE ARCHIVO DE JS TERMINA CON LA GESTION DEL ARRAY DE LOS PRODUCTOS DEL CARRITO MEDIANTE LOCALSTORAGE. EL CHECKOUT SE MANEJA DESDE UN ARCHIVO JS SEPARADO
+
+
+
+
 
 
 
