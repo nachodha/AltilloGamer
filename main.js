@@ -4,6 +4,9 @@ console.log(`hello world`)
 let ofertasPS4 = []
 let contenidoStorePS4 = document.getElementById(`contenidoStorePS4`)
 let carritoCompra = []
+
+
+
 console.log(carritoCompra.length)
 console.log(contenidoStorePS4)
 
@@ -55,9 +58,16 @@ function clickBoton(clicked_id) {
 //CADA VEZ QUE SE CLICKEA EL BOTON PARA AGREGAR UN PRODUCTO AL CARRITO SE INTERACTUA CON EL LOCALSTORAGE, QUE LUEGO DARA CONTENIDO AL CHECKOUT
   if (localStorage.getItem (`carrito`) === null) {
     localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))
+    return carritoCompra = []
   }  else {
+    const arrayRecuperado = JSON.parse(localStorage.getItem(`carrito`))
+    arrayRecuperado.reverse()
+    carritoCompra = carritoCompra.concat(arrayRecuperado)
     localStorage.clear()
-    localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))
+    localStorage.setItem(`carrito`,  JSON.stringify(carritoCompra))
+    return carritoCompra = []
+    /*localStorage.clear()
+    localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))*/
   }
 }
 

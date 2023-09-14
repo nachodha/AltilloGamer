@@ -179,7 +179,6 @@
 
 .store {
     background-color: #414040;
-    height: 100%;
     padding-top: 10px;
     flex-wrap: nowrap;
     flex-flow: column;
@@ -219,4 +218,40 @@
     color: rgb(180, 180, 180);
 }
 
+/*ESTILOS CHECKOUT DESDE ACA*/
+
+.store-carro {
+    background-color: #1f1f1f;
+    height: 100%;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.contenedor-producto {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: #fffbfb;
+    margin-top: 5px;
+}
+
+.producto-carro {
+    color: #f65a07;
+    align-self: flex-start;
+    margin-left: 10px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+.precio-carro {
+    color: #f65a07;
+    margin-right: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: small;
+}
+
+.fondo {
+    height: 100vh;
+}
 
