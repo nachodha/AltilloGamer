@@ -3,13 +3,21 @@
 
 .padre {
     display: flex;
+    padding-top: 13px;
     flex-flow: column nowrap;
-    background-color: #ffffff;
+    background-color: #1f1f1f;
+}
+.fondo {
+    height: 100vh;
+    padding-top: 13px;
+    margin-top: 0px;
+    background-color: #1f1f1f;
 }
 
 .header {
-    background-color: #ffffff;
-
+    background-color: #1f1f1f;
+    margin-top: 0px;
+    margin-bottom: 3px;
 
 }
 #carro {
@@ -66,7 +74,7 @@
 .section {
     margin-top: 0px;
     margin-bottom: 0px;
-    background-color: #fffbfb;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -232,8 +240,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    border-bottom: #fffbfb;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .producto-carro {
@@ -251,7 +258,15 @@
     font-size: small;
 }
 
-.fondo {
-    height: 100vh;
+
+
+.vacio {
+    background-color: #1f1f1f;
+    display: flex;
+   justify-content: center;
+    width: 100vw;
+    color: #f65a07;
+    font-family: 'Press Start 2P', cursive;
 }
+
 

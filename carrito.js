@@ -1,12 +1,11 @@
 let checkout= document.getElementById (`contenidoCheckout`)
-
+let estadoCarrito = document.getElementById (`estado-carrito`)
 const arrayCheckout = []
-console.log(checkout)
+
 
 
 
 let arrayRecuperado = JSON.parse(localStorage.getItem(`carrito`))
-console.log(arrayRecuperado)
 arrayRecuperado.reverse()
 arrayRecuperado.forEach(element => {
     let nombre = element.nombre
@@ -18,6 +17,17 @@ arrayRecuperado.forEach(element => {
     <div class="precio-carro">${precio}</div>
     `
 });
+
+if (localStorage.getItem (`carrito`) === null) {
+    estadoCarrito.style.display = `block`    
+    console.log (`carrito vacio`)
+  }  else {
+    console.log(`carrito lleno`)
+    estadoCarrito.style.display = `none`
+    /*localStorage.clear()
+    localStorage.setItem(`carrito`, JSON.stringify(carritoCompra))*/
+  }
+
 
 //QUE SIGUE? PRIMERAMENTE CSS, HASTA ACA TENGO LOS PRODUCTOS QUE SE LEEN DE UN JSON, EL CARRITO QUE SE ARMA EN EL LOCAL STORAGE Y EL CHECKOUT QUE LEE DESDE EL LOCALSTORA Y MUESTRA LA INFO
 // NECESITO UNA VISUAL PARA ESA INFO, LA POSIBILIDAD DE ELIMINAR PRODUCTOS DESDE EL CHECKOUT, Y LA SUMA DINAMICA DEL VALOR DE TODOS LOS PRODUCTOS QUE SEA VISIBLE EN EL CHECKOUT
